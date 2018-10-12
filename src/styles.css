@@ -1,1 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+header {font-size: 60px}
+body {font-size: 30px}
+footer {font-size: 20px}
+:host {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+}

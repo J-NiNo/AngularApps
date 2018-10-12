@@ -1,16 +1,22 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { AppVariables } from './app.component';
+import { AppComponent } from './app.component';
+import { AppHeader} from './header/app.header.component';
+import { AppBody } from './body/app.body.component';
+import { AppFooter } from './footer/app.footer.component';
 
 @NgModule({
   declarations: [
-    AppVariables
+    AppComponent,
+    AppHeader,
+    AppBody,
+    AppFooter
   ],
   imports: [
     BrowserModule
   ],
   providers: [],
-  bootstrap: [AppVariables]
+  bootstrap: [AppComponent, AppHeader, AppBody, AppFooter]
 })
 export class AppModule { }
