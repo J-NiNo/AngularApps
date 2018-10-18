@@ -1,0 +1,6 @@
+<div>
+    <app-todo (onAdded)="onAdded($event)"></app-todo>
+    <ul>
+        <li *ngFor='let todo of todos'>{{todo}}</li>
+    </ul>
+</div>
